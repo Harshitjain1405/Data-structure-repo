@@ -1,0 +1,39 @@
+
+The Zeller's Congruence algorithm is a mathematical formula used to calculate the day of the week for a given date.
+It was devised by Christian Zeller in the late 19th century.
+
+The algorithm takes three inputs: the year (in the range of 1583 to infinity),
+the month (1-12), and the day of the month (1-31).
+Here's the step-by-step explanation of the Zeller's Congruence algorithm:
+
+Adjust the month and year: If the month is January or February,
+you need to treat them as months 13 and 14 of the previous year.
+For example, if the date is January 1, 2023, you would consider it as 13th month of the year 2022.
+
+Calculate the day of the week: To calculate the day of the week, you need to use the following formula:
+
+scss
+Copy code
+int h = q + 13*(m + 1) / 5 + k + k / 4 + j / 4 + 5 * j;
+		h = h % 7;
+Where:
+
+h is the day of the week (0 = Saturday, 1 = Sunday, 2 = Monday, and so on).
+q is the day of the month.
+m is the adjusted month.
+K is the year of the century (year % 100).
+J is the zero-based century (year / 100).
+Convert the day of the week to a more familiar format: The result obtained from step 2 will be a number from 0 to 6. You can convert it to a more recognizable format, such as Sunday, Monday, etc.
+
+Here's a conversion table:
+
+0: Saturday
+1: Sunday
+2: Monday
+3: Tuesday
+4: Wednesday
+5: Thursday
+6: Friday
+That's the essence of the Zeller's Congruence algorithm.
+It allows you to determine the day of the week for a given date using simple arithmetic calculations.
+It's worth noting that the algorithm assumes the Gregorian calendar is in use and may not provide accurate results for dates before 1583 when the Gregorian calendar was adopted.
