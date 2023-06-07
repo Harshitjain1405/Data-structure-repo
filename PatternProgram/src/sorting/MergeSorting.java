@@ -14,6 +14,11 @@ public class MergeSorting {
         int n = arr.length;
 
         mergeSorts(arr,0, n-1);
+
+        System.out.println("After Merge Sort\n");
+        for(int i = 0; i< arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 
     private static void mergeSorts(int[] arr, int low, int high) {
@@ -54,10 +59,6 @@ public class MergeSorting {
             //Transferring element from temp to arr
             for(int i = low; i<= high ; i++){
                 arr[i] = temp.get(i - low);
-            }
-            System.out.println("After Merge Sort\n");
-            for(int i = 0; i< arr.length; i++){
-                System.out.print(arr[i] + " ");
             }
         }
     }
