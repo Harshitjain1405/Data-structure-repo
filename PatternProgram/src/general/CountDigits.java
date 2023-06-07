@@ -1,3 +1,4 @@
+package general;
 //Problem Statement: Given an integer N , write program to count number of digits in N.
 //        Example 1:
 //        Input: N = 12345

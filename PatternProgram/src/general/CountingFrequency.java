@@ -1,3 +1,4 @@
+package general;
 //Example 1:
 //        Input: arr[] = {10,5,10,15,10,5};
 //        Output: 10  3

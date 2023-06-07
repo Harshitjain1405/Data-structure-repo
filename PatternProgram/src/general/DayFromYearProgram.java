@@ -1,3 +1,4 @@
+package general;
 //
 //        Write a function in java that calculate the corresponding
 //        day of the week for any particular date in the past or future

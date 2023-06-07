@@ -1,3 +1,4 @@
+package general;
 //Input Format: N = 3
 //        Result:
 //          *
