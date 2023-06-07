@@ -26,7 +26,7 @@ public class BubbleSort {
                 }
             }
         }
-        System.out.println("After Selection Sort\n");
+        System.out.println("After Bubble Sort\n");
         for(int i = 0 ; i<=n-1; i++){
             System.out.print(arr[i]+" ");
         }
