@@ -1,4 +1,4 @@
-package DesignPattern.AdapterFactory;
+package DesignPattern.AbstractFactory;
 
 public class ShapeGet {
     public static AbstractFactory getShapeFactory(boolean round){

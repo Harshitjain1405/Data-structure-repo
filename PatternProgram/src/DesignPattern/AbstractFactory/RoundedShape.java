@@ -1,4 +1,4 @@
-package DesignPattern.AdapterFactory;
+package DesignPattern.AbstractFactory;
 
 public class RoundedShape extends AbstractFactory{
     @Override
