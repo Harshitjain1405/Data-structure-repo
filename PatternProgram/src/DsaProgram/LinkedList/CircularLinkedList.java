@@ -88,7 +88,7 @@ public class CircularLinkedList {
         } else {
             newNode.next = head;
             head = newNode;
-            tail.next = newNode;
+            tail.next = head;
         }
 
     }

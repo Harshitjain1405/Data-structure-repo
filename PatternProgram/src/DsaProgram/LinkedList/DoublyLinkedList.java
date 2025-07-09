@@ -69,8 +69,9 @@ public class DoublyLinkedList {
             for(int i = 0; i< pos; i++) { //10 <-> 20 <-> 30
                 curr = curr.next;
             }
-            curr.prev.next = curr.next;
+
             curr.next.prev = curr.prev;
+            curr.prev.next = curr.next;
         }
         size --;
 

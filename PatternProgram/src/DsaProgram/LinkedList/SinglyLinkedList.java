@@ -77,7 +77,7 @@ public class SinglyLinkedList {
 
     private void deleteByPosition(int pos) {
         if (pos < 0 || pos > size || head == null) {
-            throw new IndexOutOfBoundsException("Invalid postion to delete : " + pos);
+            throw new IndexOutOfBoundsException("Invalid position to delete : " + pos);
         }
         Node curr = head;
         for (int i = 0; i < pos - 1; i++) {
