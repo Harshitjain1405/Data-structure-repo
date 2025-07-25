@@ -50,16 +50,26 @@ public class IsomorphicString {
         if(s.length() != t.length()) return false;
 
         Map<Character, Character> sMap = new HashMap<>();
-        for(int i = 0; i<s.length(); i++) {
-            sMap.put(s.charAt(i), t.charAt(i));
-        }
-
+        Map<Character, Character> tMap = new HashMap<>();
 
         for(int i = 0; i< s.length(); i++) {
-            if(sMap.get(s.charAt(i)) == null) {
-                return false;
+           Character sChar = s.charAt(i);
+           Character tChar = t.charAt(i);
+
+           if(sMap.containsKey(sChar)) {
+               if(sMap.get(sChar) != tChar) return false;
+           } else {
+               sMap.put(sChar, tChar);
+           }
+
+            if(tMap.containsKey(tChar)) {
+                if(tMap.get(tChar) != sChar) return false;
+            } else {
+                tMap.put(tChar, sChar);
             }
+
         }
+
         return true;
     }
 }

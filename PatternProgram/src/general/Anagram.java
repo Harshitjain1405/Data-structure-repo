@@ -5,8 +5,8 @@ import java.util.Map;
 
 public class Anagram {
     public static void main(String[] args) {
-        String str1 = "silent";
-        String str2 = "listen";
+        String str1 = "aa";
+        String str2 = "bb";
 
         if(isAnagram(str1, str2)) {
             System.out.print(str1+" and "+str2+" are both anagrams");
@@ -21,10 +21,12 @@ public class Anagram {
 
         for(int i = 0; i<str1.length(); i++) {
             anagramMap.put(str1.charAt(i),anagramMap.getOrDefault(str1.charAt(i),0) + 1);
-            anagramMap.put(str2.charAt(i),anagramMap.getOrDefault(str2.charAt(i),0) + 1);
         }
-        for(int i : anagramMap.values()) {
-            if( i!= 2) return false;
+
+        for(int i = 0; i< str2.length(); i++) {
+            if(!anagramMap.containsKey(str2.charAt(i))) return false;
+            anagramMap.put(str2.charAt(i), anagramMap.get(str2.charAt(i)) - 1);
+            if(anagramMap.get(str2.charAt(i)) < 0) return false;
         }
         return true;
     }
