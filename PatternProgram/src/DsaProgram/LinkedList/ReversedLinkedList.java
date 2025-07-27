@@ -56,7 +56,7 @@ public class ReversedLinkedList {
         }
 
         ListNode curr = prev.next;
-        ListNode next = null;
+        ListNode next;
 
         for(int i = 0; i< right - left; i++) {
             next = curr.next;
