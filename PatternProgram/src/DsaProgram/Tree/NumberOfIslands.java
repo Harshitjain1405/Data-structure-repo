@@ -60,7 +60,7 @@ public class NumberOfIslands {
         if(i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || !Objects.equals(grid[i][j], "1")) {
             return;
         }
-        grid[i][j] = "0";
+        grid[i][j] = "*";
 
         dfs(grid, i-1, j);
         dfs(grid, i+1, j);

@@ -33,7 +33,7 @@ public class LengthOfLastWord {
     }
 
     private static int getLastWordLength(String s) {
-        String[] strArr = s.split(" ");
+        String[] strArr = s.split("\\s+");
 
         int n = strArr.length;
 
