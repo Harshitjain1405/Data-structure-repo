@@ -576,3 +576,22 @@ Rules:
 - Continue until the interview is complete.
 
 The interview should simulate a real product-based company interview with emphasis on backend engineering, cloud-native systems, distributed systems, cloud security, payment systems, production debugging, coding, low-level design, and system design.
+
+## Recommended order
+
+Since you're targeting Senior Software Engineer roles (5–7 years) in Cloud Security and Payment product companies, I recommend this sequence:
+
+Java
+Spring Boot & Microservices
+Kafka
+Kubernetes
+Docker
+Redis
+AWS
+SQL
+System Design
+Low-Level Design
+Cloud Security
+Payment Systems
+DSA
+Behavioral Interview
